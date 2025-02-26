@@ -89,7 +89,7 @@ for datafile in datafiles:
 			if 'success:' not in description and 'a user task' not in description:
 				failedTaskLabelDict[taskName] = 'failure'
 			failure_trace[taskIdDict[taskName]].append(eventIdDict[eventName])
-print('Total failure tasks: ', len(failedTaskLabelDict)
+print('Total failure tasks: ', len(failedTaskLabelDict))
 sorted_taskIdDict = sorted(taskIdDict.items(), key=lambda x: x[1])
 json.dump(sorted_taskIdDict, open('failure_taskId.json', 'w'))
 
