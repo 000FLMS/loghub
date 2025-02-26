@@ -57,3 +57,10 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#Benchmark Result
+*.csv
+*.log
+
+# DS Store
+.DS_Store
